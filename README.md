@@ -1,6 +1,9 @@
 # Explainable Cardiac AI
 
 ### Echocardiography Analysis using Deep Learning, Explainable AI and Large Language Models
+## Segmentation Result
+
+![Segmentation](results/segmentation/seg.png)
 
 \<p align="center">
 &#x20; \<img src="[https://img.shields.io/badge/Python-3.x-blue?logo=python](https://img.shields.io/badge/Python-3.x-blue?logo=python)" />

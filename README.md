@@ -1,80 +1,188 @@
 # Explainable Cardiac AI
 
-### Echocardiography Analysis using Deep Learning, Explainable AI and Large Language Models
-## Segmentation Result
-
-![Segmentation](results/segmentation/seg.png)
+### AI-Powered Echocardiography Analysis Using Deep Learning, Explainable AI and Large Language Models
 
 \<p align="center">
-&#x20; \<img src="[https://img.shields.io/badge/Python-3.x-blue?logo=python](https://img.shields.io/badge/Python-3.x-blue?logo=python)" />
-&#x20; \<img src="[https://img.shields.io/badge/Deep%20Learning-PyTorch%20%7C%20TensorFlow-orange](https://img.shields.io/badge/Deep%20Learning-PyTorch%20%7C%20TensorFlow-orange)" />
-&#x20; \<img src="[https://img.shields.io/badge/Domain-Medical%20Image%20Analysis-red](https://img.shields.io/badge/Domain-Medical%20Image%20Analysis-red)" />
-&#x20; \<img src="[https://img.shields.io/badge/Project-Academic%20Research-purple](https://img.shields.io/badge/Project-Academic%20Research-purple)" />
+&#x20; \<img src="[https://img.shields.io/badge/Python-3.x-blue?logo=python](https://img.shields.io/badge/Python-3.x-blue?logo=python)" alt="Python" />
+&#x20; \<img src="[https://img.shields.io/badge/Deep%20Learning-PyTorch-orange?logo=pytorch](https://img.shields.io/badge/Deep%20Learning-PyTorch-orange?logo=pytorch)" alt="PyTorch" />
+&#x20; \<img src="[https://img.shields.io/badge/Computer%20Vision-OpenCV-green](https://img.shields.io/badge/Computer%20Vision-OpenCV-green)" alt="OpenCV" />
+&#x20; \<img src="[https://img.shields.io/badge/Domain-Healthcare%20AI-red](https://img.shields.io/badge/Domain-Healthcare%20AI-red)" alt="Healthcare AI" />
+&#x20; \<img src="[https://img.shields.io/badge/Research-Academic-purple](https://img.shields.io/badge/Research-Academic-purple)" alt="Academic Research" />
 \</p>
 
-## Overview
+\<p align="center">
+&#x20; \<b>An academic research project exploring automated cardiac analysis from echocardiography videos.\</b>
+\</p>
 
-**Explainable Cardiac AI** is an academic research project focused on automated analysis of echocardiography videos using artificial intelligence and deep learning.
+---
 
-The project explores Left Ventricle (LV) segmentation, cardiac cycle analysis, Ejection Fraction (EF) estimation, explainability techniques, and language-model-based clinical report generation.
+## Project Overview
 
-The research combines computer vision, deep learning, temporal analysis and generative AI to investigate an integrated workflow for echocardiographic analysis.
+**Explainable Cardiac AI** is an academic research project focused on applying deep learning, computer vision, explainable AI and generative AI to echocardiography analysis.
 
-## Research Objectives
+The project investigates automated **Left Ventricle (LV) segmentation**, cardiac cycle analysis, **Ejection Fraction (EF) estimation**, model explainability and Large Language Model (LLM)-based structured report generation.
 
-- Preprocess echocardiography videos and extract relevant frames.
-- Develop deep learning approaches for Left Ventricle segmentation.
-- Explore cardiac cycle analysis and End-Diastolic (ED) and End-Systolic (ES) frame identification.
-- Estimate Ejection Fraction from ventricular measurements.
-- Investigate explainability techniques for interpreting model predictions.
-- Explore structured clinical report generation using a Large Language Model.
+Using echocardiography datasets such as **EchoNet-Dynamic** and **CAMUS**, the research explores different approaches to extracting cardiac information from ultrasound images and videos.
+
+The overall objective is to investigate an explainable AI-assisted workflow that connects image segmentation, cardiac measurements, visual interpretation and structured report generation.
+
+## Project Demo
+
+Explore the project demonstration:
+
+[**▶ Watch the Echocardiography AI Project Demo**](results/segmentation/Recording%202026-11-17%20095822.mp4)
+
+The demonstration showcases selected project outputs and segmentation results.
+
+## Key Research Components
+
+| Component                      | Description                                                      |
+| ------------------------------ | ---------------------------------------------------------------- |
+| Echocardiography preprocessing | Video processing and frame extraction                            |
+| LV segmentation                | Deep learning-based Left Ventricle segmentation experiments      |
+| Cardiac cycle analysis         | End-Diastolic (ED) and End-Systolic (ES) frame identification    |
+| EF estimation                  | Experimental cardiac measurement and EF estimation approaches    |
+| Explainable AI                 | Grad-CAM-based visualization of model predictions                |
+| LLM report generation          | Structured report-generation prototype using Mistral-7B-Instruct |
 
 ## Research Workflow
 
-The project is organized into six major research stages.
+The research is organized into six major stages:
 
-| Stage | Research component    | Description                                                       |
-| ----- | --------------------- | ----------------------------------------------------------------- |
-| 01    | Data preprocessing    | Video processing, frame extraction and preparation                |
-| 02    | LV segmentation       | U-Net-based and other deep learning segmentation experiments      |
-| 03    | EF estimation         | Cardiac phase analysis and EF estimation experiments              |
-| 04    | Explainable AI        | Grad-CAM-based visualization experiments                          |
-| 05    | CAMUS experiments     | Additional echocardiographic segmentation experiments             |
-| 06    | LLM report generation | Structured report generation using extracted cardiac measurements |
+```text
+Echocardiography Videos
+          |
+          v
+   Data Preprocessing
+          |
+          v
+  Frame Extraction
+          |
+          v
+  Left Ventricle Segmentation
+          |
+          v
+  Cardiac Cycle Analysis
+  (ED / ES Identification)
+          |
+          v
+  Cardiac Measurements
+  and EF Estimation
+          |
+          v
+  Explainable AI
+  (Grad-CAM Visualization)
+          |
+          v
+  LLM-Based Report Generation
+  (Mistral-7B-Instruct)
+```
 
-## Methodology
+*The diagram represents the overall research direction. Individual components were investigated through separate experiments and notebooks.*
 
-### 1. Echocardiography preprocessing
+## Experimental Results and Visualizations
 
-Echocardiography videos are processed to prepare image frames for subsequent deep learning experiments.
+The following figures showcase selected outputs from the research experiments.
 
-### 2. Left Ventricle segmentation
+### 1. Left Ventricle Segmentation
 
-Deep learning architectures are investigated for segmenting the Left Ventricle from echocardiographic images.
+The segmentation experiments investigate deep learning architectures for identifying the Left Ventricle in echocardiography images.
 
-The segmentation experiments include U-Net-based approaches and other architectural variations.
+**U-Net Architecture**
 
-### 3. Cardiac analysis and EF estimation
 
-The segmentation and cardiac analysis experiments investigate:
 
-- End-Diastolic (ED) and End-Systolic (ES) frame identification.
-- Changes in ventricular measurements over time.
-- Ejection Fraction estimation using experimental measurement-based approaches.
+**Input, Ground Truth and Segmentation Results**
+
+
+
+
+
+### 2. Cardiac Cycle Analysis
+
+The project explores cardiac phase identification and changes in ventricular measurements across echocardiography frames.
+
+**End-Diastolic and End-Systolic Frames**
+
+
+
+**Left Ventricular Ejection Fraction Visualization**
+
+
+
+### 3. Ejection Fraction Estimation
+
+Experimental EF estimation and evaluation visualizations:
+
+**EF Prediction**
+
+
+
+**Regression Analysis**
+
+
+
+**Bland–Altman Analysis**
+
+
+
+**EF Distribution**
+
+
 
 ### 4. Explainable AI
 
-Grad-CAM-based experiments are explored to visualize model attention and investigate the interpretability of deep learning predictions.
+Grad-CAM-based experiments explore visual interpretation of deep learning predictions and model attention.
 
-### 5. CAMUS experiments
+These visualizations are intended for research and model interpretation, not as clinical evidence.
 
-Additional segmentation experiments are conducted using the CAMUS echocardiography dataset to explore model behavior on another dataset.
+### 5. LLM-Based Clinical Report Generation
 
-### 6. LLM-based clinical report generation
+A report-generation prototype explores the use of **Mistral-7B-Instruct** to generate structured summaries using extracted cardiac measurements.
 
-A report-generation prototype explores the use of **Mistral-7B-Instruct** to generate structured summaries from extracted cardiac measurements.
+**Left Ventricular Measurements Over Time**
 
-The report-generation component is an experimental research prototype and is not a clinically validated reporting system.
+
+
+**Generated Structured Report**
+
+
+
+The generated report is an experimental research output and requires independent clinical verification.
+
+## Datasets
+
+This research uses the following echocardiography datasets:
+
+| Dataset         | Research Application                                            |
+| --------------- | --------------------------------------------------------------- |
+| EchoNet-Dynamic | Echocardiography video analysis and LV segmentation experiments |
+| CAMUS           | Additional echocardiographic image segmentation experiments     |
+
+**Dataset access and usage**
+
+- Original datasets are not included in this repository.
+- Users must obtain the datasets from their respective official providers.
+- All dataset licensing, access and usage restrictions must be followed.
+- No patient-related dataset files are distributed through this repository.
+
+Refer to [`data/README.md`](data/README.md) for dataset information.
+
+## Technology Stack
+
+| Category            | Technologies                                                               |
+| ------------------- | -------------------------------------------------------------------------- |
+| Programming         | Python                                                                     |
+| Deep Learning       | PyTorch, TensorFlow, Keras                                                 |
+| Computer Vision     | OpenCV, Pillow                                                             |
+| Image Processing    | Albumentations, Scikit-image                                               |
+| Data Processing     | NumPy, Pandas, SciPy                                                       |
+| Machine Learning    | Scikit-learn                                                               |
+| Visualization       | Matplotlib, Seaborn                                                        |
+| Model Architectures | U-Net, ResNet50-based segmentation experiments, ConvLSTM-based experiments |
+| Explainable AI      | Grad-CAM                                                                   |
+| Generative AI       | Hugging Face Transformers, Mistral-7B-Instruct                             |
+| Development Tools   | Jupyter Notebook, Git, GitHub                                              |
 
 ## Repository Structure
 
@@ -120,109 +228,61 @@ Explainable-Cardiac-AI/
 └── requirements.txt
 ```
 
-## Experimental Results and Visualizations
+## Installation and Setup
 
-The following visualizations are available in the repository.
-
-### 1. Left Ventricle Segmentation
-
-\<p align="center">   \<img src="results/segmentation/U-Net%20%20Architecture.png" width="75%" alt="U-Net architecture" /> \</p>
-
-\<p align="center">   \<img src="results/segmentation/input_vs_groundtruth.png" width="48%" alt="Input and ground truth comparison" />   \<img src="results/segmentation/seg.png" width="48%" alt="Segmentation visualization" /> \</p>
-
-### 2. Cardiac Analysis and EF Estimation
-
-\<p align="center">   \<img src="results/segmentation/ed_es.jpg" width="48%" alt="End diastolic and end systolic frames" />   \<img src="results/segmentation/lvef.png" width="48%" alt="LVEF visualization" /> \</p>
-
-\<p align="center">   \<img src="results/ef_estimation/ef_prediction.png" width="48%" alt="EF prediction" />   \<img src="results/ef_estimation/ef_regression_plot.png" width="48%" alt="EF regression plot" /> \</p>
-
-\<p align="center">
-&#x20; \<img src="results/ef_estimation/bland_altman.png" width="48%" alt="Bland Altman analysis" />
-&#x20; \<img src="results/ef_estimation/ef_distribution.png" width="48%" alt="EF distribution" />
-\</p>
-
-### 3. LLM-Based Report Generation
-
-\<p align="center">   \<img src="results/report_generation/lv_overtime.png" width="75%" alt="Left ventricular measurements over time" /> \</p>
-
-\<p align="center">   \<img src="results/report_generation/report.png" width="75%" alt="Generated structured cardiac report" /> \</p>
-
-## Datasets
-
-This research uses:
-
-- **EchoNet-Dynamic** – Echocardiography video dataset for cardiac analysis and LV segmentation experiments.
-- **CAMUS** – Echocardiography dataset for additional segmentation experiments.
-
-Original datasets and patient-related data are not included in this repository.
-
-Users must obtain authorized access from the respective dataset providers and comply with their licensing, access and usage requirements.
-
-Refer to [`data/README.md`](data/README.md) for further information.
-
-## Technologies Used
-
-| Category            | Technologies                                                         |
-| ------------------- | -------------------------------------------------------------------- |
-| Programming         | Python                                                               |
-| Deep Learning       | PyTorch, TensorFlow, Keras                                           |
-| Computer Vision     | OpenCV, Pillow                                                       |
-| Image Processing    | Albumentations, Scikit-image                                         |
-| Data Processing     | NumPy, Pandas, SciPy                                                 |
-| Machine Learning    | Scikit-learn                                                         |
-| Visualization       | Matplotlib, Seaborn                                                  |
-| Model Architectures | U-Net, ResNet50-based segmentation experiments, ConvLSTM experiments |
-| Explainability      | Grad-CAM                                                             |
-| Generative AI       | Hugging Face Transformers, Mistral-7B-Instruct                       |
-| Development         | Jupyter Notebook, Git, GitHub                                        |
-
-## Installation
-
-Clone the repository:
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/Harshithabhaskaran/Explainable-Cardiac-AI.git
+```
+
+### 2. Navigate to the project directory
+
+```bash
 cd Explainable-Cardiac-AI
 ```
 
-Install the listed dependencies:
+### 3. Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Launch Jupyter Notebook:
+### 4. Launch Jupyter Notebook
 
 ```bash
 jupyter notebook
 ```
 
-**Note:** The notebooks represent different research experiments and may require different dataset paths, model checkpoints, hardware configurations and dependency versions. The original datasets and trained model weights are not distributed with this repository. GPU and framework compatibility should be configured according to the individual experiment.
+Open the relevant notebook and configure the dataset paths and experiment-specific settings before execution.
+
+**Note:** Individual notebooks may require different dataset paths, trained checkpoints, dependency versions and hardware configurations. GPU availability and framework compatibility should be configured according to the selected experiment. Original datasets and trained model weights are not distributed in this repository.
 
 ## Research Scope and Limitations
 
-- This repository contains research notebooks and experimental visualizations rather than a fully packaged production application.
-- Different notebooks investigate different architectures and experimental approaches; they should not be interpreted as a single fully validated deployment pipeline.
-- EF estimation results depend on the measurement approach and evaluation protocol.
-- CAMUS experiments are exploratory and should not be interpreted as proof of clinical generalization.
-- Explainability visualizations are experimental and do not establish clinical validity.
-- LLM-generated reports are research outputs and require independent clinical verification.
+- This repository contains academic research notebooks and experimental visualizations, rather than a fully packaged production application.
+- Different notebooks investigate different architectures and experimental approaches; they do not represent one fully validated end-to-end deployment pipeline.
+- EF estimation performance depends on the measurement approach and evaluation protocol.
+- CAMUS experiments are exploratory and do not independently establish clinical generalization.
+- Grad-CAM visualizations provide model-interpretation insights but do not establish clinical validity.
+- LLM-generated reports are experimental outputs and require independent clinical review.
 
-**This project is intended for academic research and educational purposes only. It is not a medical device and must not be used for clinical diagnosis or treatment decisions.**
+**Medical Disclaimer:** This project is intended exclusively for academic research and educational purposes. It is not a certified medical device and must not be used for clinical diagnosis, treatment decisions or patient management.
 
 ## Future Work
 
 - Improve temporal consistency in cardiac segmentation.
 - Strengthen quantitative evaluation and external validation.
-- Investigate more robust cardiac measurement approaches.
+- Investigate more robust cardiac measurement and EF estimation approaches.
 - Improve explainability and interpretation of model predictions.
-- Explore Retrieval-Augmented Generation (RAG) for evidence-grounded clinical report generation.
-- Develop a reproducible and integrated research demonstration.
+- Explore Retrieval-Augmented Generation (RAG) for evidence-grounded report generation.
+- Develop a more reproducible and integrated research demonstration.
 
 ## Author
 
 **B. Harshitha**
-M.Tech – Computer Science and Engineering (AI & ML)
+
+M.Tech – Computer Science and Engineering (Artificial Intelligence and Machine Learning)
 Vellore Institute of Technology, Vellore
 
 - **GitHub:** [Harshithabhaskaran](https://github.com/Harshithabhaskaran)
@@ -230,4 +290,4 @@ Vellore Institute of Technology, Vellore
 
 ---
 
-*Academic research project exploring artificial intelligence for echocardiography analysis, cardiac measurements, explainability and clinical report generation.*
+\<p align="center">   \<b>Explainable Cardiac AI\</b>\<br/>   Exploring the intersection of Artificial Intelligence, Medical Imaging and Healthcare Research. \</p>

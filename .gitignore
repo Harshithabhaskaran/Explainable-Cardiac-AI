@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Environments
+venv/
+.venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Medical datasets and private data
+data/*
+!data/README.md
+
+# Model weights and checkpoints
+*.pth
+*.pt
+*.h5
+*.keras
+*.onnx
+
+# Temporary files
+*.log
+.DS_Store
+Thumbs.db
+
+# Secrets
+.env
+.env.*
+!.env.example

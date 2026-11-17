@@ -1,0 +1,33 @@
+# Core Python utilities
+numpy
+pandas
+Pillow
+tqdm
+h5py
+
+# Computer Vision and Image Processing
+opencv-python
+albumentations
+scikit-image
+
+# Deep Learning
+tensorflow
+torch
+torchvision
+segmentation-models-pytorch
+
+# Data Science and Scientific Computing
+scipy
+scikit-learn
+matplotlib
+seaborn
+
+# Generative AI and LLM
+transformers
+accelerate
+sentencepiece
+
+# Jupyter
+jupyter
+ipykernel
+ipython
